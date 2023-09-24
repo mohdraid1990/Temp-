@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icon  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Title -->
+  <title>Tempelete-0</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@400;500;700&family=Raleway:wght@400;800&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Start header -->
+  <section class="header">
+    <div class="img"><img src="image/header.jpg" alt="image"></div>
+    <div class="logo"><img src="image/logo.svg" alt="logo"></div>
+
+  </section>
+  <!-- End header -->
+  <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+
+
+  <!-- Start Main -->
+
+  <section class="main">
+    <img src="1.png" alt="">
+
+    <div class="offer">
+      <div class="timer">
+        <p>LIMiITED OFFER</p>
+        <p id="time"></p>
+      </div>
+      <div class="price">
+        <p class="oldPrice">R <span id="oldPrice">250.00</span></p>
+        <img src="image/Line 5.png" alt="line">
+        <p class="newPrice">R <span id="newPrice"></span></p>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- End Main -->
+  <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+
+  <!-- Start Landing -->
+  <section class="landing">
+    <div class="container">
+      <div class="head">
+        <p class="text-0"> Excellent 4.8/5</p>
+        <img src="image/Group 147.png" alt="">
+        <a href="#">best selling</a>
+
+      </div>
+      <h1>Orthopedic Slippers</h1>
+
+      <div class="group-image">
+        <div class="item-image">
+          <img src="image/BIG PHOTOS.png" alt="#" style="display: flex;">
+        </div>
+        <div class="item-image">
+          <img src="image/orange.png" alt="#" style="display: none;">
+        </div>
+        <div class="item-image">
+          <img src="image/pink.png" alt="#" style="display: none;">
+        </div>
+        <div class="item-image">
+          <img src="image/yellow.png" alt="#" style="display: none;">
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <img class="image active" src="image/BIG PHOTOS.png" onclick="currentSlide(1)" alt="#">
+        </div>
+        <div class="slide">
+          <img class="image" src="image/orange.png" onclick="currentSlide(2)" alt="#">
+        </div>
+        <div class="slide">
+          <img class="image" src="image/pink.png" onclick="currentSlide(3)" alt="#">
+        </div>
+        <div class="slide">
+          <img class="image" src="image/yellow.png" onclick="currentSlide(4)" alt="#">
+        </div>
+
+      </div>
+
+  </section>
+  <!-- End Landing -->
+  <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+
+  <!-- Start Detalis -->
+  <section class="detalis">
+    <div class="container">
+      <div class="text">
+        <p><b>Fast Delivery:</b> 2-4 days from SA <svg xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="0.529cm" height="0.635cm">
+            <image x="0px" y="0px" width="15px" height="18px"
+              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAMAAACzQHQ9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABm1BMVEX///////3+/////v/16ujnzsrkvrvaqaLZrqjlzMj27Otumo2kwrq6z8ro6OjjvLfZkIfVbWLZYVPdWkjUTDzGPi66NSS/QC9vcCILbVQTeFpDknzVzsjompDiVUThWEjjVkXZUUHNUkO/OinYq6YpHQN9fCkfe1QVfmAkiWuFvq/q4N7iy8PP0sucxLl9sKF8qp2psKje2dUCAgIgGQmykCIvhFodhmgki20uk3UljnAmjXAbgmUMdVcCaUwMb1Ocu7MICAgpIhKsfyF6mk4ki24mj3AnkHIkjW8ZfF8FakwMb1KdvLT+/v5VQxWmmTMvimEjjG12tqWp08e3y9S2vtOwssupq8CVqbDG0s4VDwOSahJ+kDoXfmEchWaOw7OUnMs+TKQrOpkjMI4VJIEKGXQTIHynrcWLdx41eEMPdlkUe16OvrCJkMQsPZctO5QpOI0fK30SH24KFWUTH3Ofpb8saVcIWkMSaE92npNmbZdHUIt0eaGWmrPGytbh5Ovi4+jg3+S5vMvGyNX7/fzx8fH19ff9//7//f6wh/PSAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+cJFQwgFVwBfWsAAADFSURBVBjTY2AAA0YmBmTACGMww0lmZhRZFlY2dg5OLgYGbh5ePn4BQSFhEVExcQ5GBglJKWkZWTl5BUUlcWUVJgZVNXUNTS1tHV09fQNDIwYGYxNTM3MLSytrG1s7ewcg39HJ2cXVzd3DxtPL28cXyPfzDwgMCg4JDQuPiGRgiIqOiY2LT0hMSk5JTUtnYMjIzMrOyc3LLygsKi4pZWYoK6+orKquqa2rb2hsaga6rKW1De5wEGCCe4ixHSrcAeQz+jIQAwDHfCXRhx4n1gAAAABJRU5ErkJggg==" />
+          </svg></p>
+
+        <div class="text">
+          <p><b>In Stock:</b> Shipping from Johannesburg
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0.529cm"
+              height="0.635cm">
+              <image x="0px" y="0px" width="15px" height="18px"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAMAAACzQHQ9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABm1BMVEX///////3+/////v/16ujnzsrkvrvaqaLZrqjlzMj27Otumo2kwrq6z8ro6OjjvLfZkIfVbWLZYVPdWkjUTDzGPi66NSS/QC9vcCILbVQTeFpDknzVzsjompDiVUThWEjjVkXZUUHNUkO/OinYq6YpHQN9fCkfe1QVfmAkiWuFvq/q4N7iy8PP0sucxLl9sKF8qp2psKje2dUCAgIgGQmykCIvhFodhmgki20uk3UljnAmjXAbgmUMdVcCaUwMb1Ocu7MICAgpIhKsfyF6mk4ki24mj3AnkHIkjW8ZfF8FakwMb1KdvLT+/v5VQxWmmTMvimEjjG12tqWp08e3y9S2vtOwssupq8CVqbDG0s4VDwOSahJ+kDoXfmEchWaOw7OUnMs+TKQrOpkjMI4VJIEKGXQTIHynrcWLdx41eEMPdlkUe16OvrCJkMQsPZctO5QpOI0fK30SH24KFWUTH3Ofpb8saVcIWkMSaE92npNmbZdHUIt0eaGWmrPGytbh5Ovi4+jg3+S5vMvGyNX7/fzx8fH19ff9//7//f6wh/PSAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+cJFQwgFVwBfWsAAADFSURBVBjTY2AAA0YmBmTACGMww0lmZhRZFlY2dg5OLgYGbh5ePn4BQSFhEVExcQ5GBglJKWkZWTl5BUUlcWUVJgZVNXUNTS1tHV09fQNDIwYGYxNTM3MLSytrG1s7ewcg39HJ2cXVzd3DxtPL28cXyPfzDwgMCg4JDQuPiGRgiIqOiY2LT0hMSk5JTUtnYMjIzMrOyc3LLygsKi4pZWYoK6+orKquqa2rb2hsaga6rKW1De5wEGCCe4ixHSrcAeQz+jIQAwDHfCXRhx4n1gAAAABJRU5ErkJggg==" />
+            </svg>
+          </p>
+
+        </div>
+      </div>
+
+      <div class="rating">
+
+        <span class="star">
+          <i class="fa-regular fa-star"></i></span>
+
+        <span class="star">
+          <i class="fa-regular fa-star"></i></span>
+
+        <span class="star">
+          <i class="fa-regular fa-star"></i></span>
+
+        <span class="star">
+          <i class="fa-regular fa-star"></i></span>
+
+        <span class="star" data-value="10">
+          <i class="fa-regular fa-star"></i></span>
+
+        <p id="rating-value">(2)</p>
+
+      </div>
+
+      <div class="box">
+        <p>color</p>
+        <div class="select-box">
+          <div class="options-container">
+            <div class="option">
+              <input type="radio" class="radio" name="category" />
+              <label for="color">Black</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" name="category" />
+              <label for="color">Orange</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" name="category" />
+              <label for="color">Pink</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" name="category" />
+              <label for="color">Yellow</label>
+            </div>
+          </div>
+          <div class="selected">
+
+          </div>
+
+        </div>
+        <p class="size">size</p>
+
+
+        <div class="select-box">
+          <div class="options-container">
+            <div class="option">
+              <input type="radio" class="radio" id="color1" name="category" />
+              <label for="color1">1</label>
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="color2" name="category" />
+              <label for="color2">2</label>
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="color3" name="category" />
+              <label for="color3">3</label>
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="color4" name="category" />
+              <label for="color4">4</label>
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="color4" name="category" />
+              <label for="color4">5</label>
+            </div>
+          </div>
+          <div class="selected"></div>
+        </div>
+      </div>
+
+      <div class="btn">
+        <a href="https://www.youtube.com/shorts/0oUvm-g2vTw"> buy now</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Detalis -->
+
+  <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
